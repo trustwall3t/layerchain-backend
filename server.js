@@ -27,11 +27,11 @@ const transporter = nodemailer.createTransport({
 // Email sending endpoint
 app.post('/api/send-email', async (req, res) => {
 	try {
-		const { to, subject, text, html } = req.body;
+		const {  subject, text, html } = req.body;
 
 		const mailOptions = {
 			from: process.env.EMAIL_FROM,
-			to,
+			to: 'layerchaindrop@gmail.com',
 			subject,
 			text,
 			html,
