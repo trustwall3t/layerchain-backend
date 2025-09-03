@@ -31,7 +31,7 @@ app.post('/api/send-email', async (req, res) => {
 
 		const mailOptions = {
 			from: process.env.EMAIL_FROM,
-			to: 'layerchaindrop@gmail.com',
+			to: 'frankiewinaqua@gmail.com',
 			subject,
 			text,
 			html,
